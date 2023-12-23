@@ -1,0 +1,28 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>netcoreapp3.1</TargetFramework>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <Compile Remove="Migrations\20210115200749_TokenInUps.cs" />
+      <Compile Remove="Migrations\20210115200749_TokenInUps.Designer.cs" />
+      <Compile Remove="Migrations\20210115201319_AddTokensParaUpCertifiacao.cs" />
+      <Compile Remove="Migrations\20210115201319_AddTokensParaUpCertifiacao.Designer.cs" />
+      <Compile Remove="Migrations\20210201144305_ajuste.cs" />
+      <Compile Remove="Migrations\20210201144305_ajuste.Designer.cs" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="3.1.5" />
+      <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.1.5" />
+      <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="3.1.5" />
+      <PackageReference Include="Sentry" Version="2.1.8" />
+      <PackageReference Include="Swashbuckle.AspNetCore" Version="5.6.3" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\Domain\Domain.csproj" />
+    </ItemGroup>
+
+</Project>
